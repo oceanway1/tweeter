@@ -1,0 +1,28 @@
+.counter {
+  float: right;
+}
+.new-tweet {
+  font-family: source sans pro;
+  width: 100%;
+}
+.tweet-text {
+  border-bottom: 3px solid black;
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  border-style: inset;
+  margin-bottom: 10px;
+  border-left: none;
+  border-top: none;
+  border-right: none;
+  background: #9ba7a81e;
+}
+
+.button {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  background: #2058f5ef;
+  border-radius: 5px;
+  border: none;
+}
