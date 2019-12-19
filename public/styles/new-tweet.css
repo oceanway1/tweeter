@@ -50,6 +50,7 @@
 
 .h-image img {
   vertical-align: middle;
+  float: left;
 }
 
 .tweet p {
