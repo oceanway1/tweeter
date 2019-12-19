@@ -58,7 +58,6 @@
 
   <!-- Page-specific (main) content here -->
   <main class="container">
-
     <section class="new-tweet">
       <h2>Compose Tweet</h2>
       <form class="compose-tweet" method="POST" action="/tweets">
@@ -67,33 +66,61 @@
         <span class="counter">140</span>
       </form>
     </section>
-    <section class="tweet-container"></section>
-     <article class="tweet">
-         <header>
-           <!-- <span class="h-image">
-             <img src="/images/profile-hex.png">
-           </span> -->
-           <span class="h-name">
-             <h3>Name</h3>
-           </span>
-           <span class="h-aname">
-             <h3>@DAVID</h3>
-           </span>
-         </header>
-         <p>
-           ANYONe FI!!!!!!!
-         </p>
-         <footer class="foot">
-           <span class="footer-left">
-             <h4>10 secs ago</h4>
-           </span>
-           <span class="footer-right"></span>
-          </span> <i class='fas fa-flag' style='font-size:24px'></i>
-               <i class='fas fa-retweet' style='font-size:24px'></i>
-               <i class='fas fa-heart' style='font-size:24px'></i>
-           </span>
-         </footer>
-       </article>
+    <section class="tweet-container">
+      <article class="tweet">
+        <header>
+          <div>
+            <span >
+            <img class="h-image" src="/images/profile-hex.png">
+            </span>
+            <span class="h-name">
+              <h3>LUKE</h3>
+            </span>
+            <span class="h-aname">
+              <h3>@LUKE</h3>
+            </span>
+          </div>
+        </header>
+        <p>one dumb tweet </p>
+        <footer class="foot">
+          <span class="footer-left">
+            <h4>10 secs ago</h4>
+          </span>
+          <span class="footer-right">
+            <i class='fas fa-flag'></i>
+            <i class='fas fa-retweet'></i>
+            <i class='fas fa-heart'></i>
+          </span>
+        </footer>
+      </article>
+      <article class="tweet">
+          <header>
+            <div>
+              <span class="h-image"></span>
+              <img src="/images/profile-hex.png">
+              </span>
+              <span class="h-name">
+                <h3>LUKE</h3>
+              </span>
+              <span class="h-aname">
+                <h3>@LUKE</h3>
+              </span>
+            </div>
+          </header>
+          <p>also a tweet </p>
+          <footer class="foot">
+            <span class="footer-left">
+              <h4>11 secs ago</h4>
+            </span>
+            <span class="footer-right">
+              <i class='fas fa-flag'></i>
+              <i class='fas fa-retweet'></i>
+              <i class='fas fa-heart'></i>
+            </span>
+          </footer>
+        </article>
+  
+    </section>
   </main>
 </body>
 

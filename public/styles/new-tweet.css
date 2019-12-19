@@ -36,30 +36,50 @@
 .tweet header {
   display: inline-block;
 }
-    
 
 .h-name {
   display: inline-block;
   margin: auto;
+  padding-top: 10px;
+  font-size: 15px
+  /* float: left; */
+}
+article.tweet:hover .h-aname {
+  color: red;
+  opacity: 1;
 }
 .h-aname {
+  float: right;
+  padding-right: 25px;
+  font-size: 15px;
+  opacity: 0;
+}
+/* .h-aname:hover {
   display: inline-block;
   float: right;
-}
+  padding-right: 25px;
+  font-size: 15px;
+  box-shadow: 10px 10px 5px;
 
-
-.h-image img {
-  vertical-align: middle;
+} */
+/* IMG IS NOT WORKING WHY? */
+.h-image  {
+ vertical-align: middle; 
+  height: 60px;
+  width: 60px;
   float: left;
+  padding-top: 10px;
+  padding-left: 10px;
+
 }
 
 .tweet p {
   border-bottom: 5px black;
   border-style: solid;
   border-top:none;
-  border-left: none;
+  border-left: 5px;
   border-right: none;
-  padding: 5px;
+  padding-bottom: 10px;
 }
 
 .footer-left {
@@ -67,6 +87,7 @@
   font-family: source sans pro, sans-serif;
   float: left;
   margin-top: -52px;
+  
 }
 
 .footer-right {
@@ -85,13 +106,18 @@ article.tweet {
   font-weight:500;
   margin-top: 50px;
   margin-bottom: 50px;
+  opacity: 0.5;
+  
 }
 article.tweet:hover {
   border: 3px solid black;
   font-weight: 400;
   margin-top: 50px;
   margin-bottom: 50px;
-  box-shadow: 10px 10px 12px;
+  box-shadow: 10px 10px 8px;
+  opacity: 1.0;
+
+  /* opp */
 }
 article.tweet h1{
   color: blue;
