@@ -17,7 +17,6 @@
   border-right: none;
   background: #9ba7a81e;
 }
-
 .button {
   display: inline-block;
   color: #fff;
@@ -26,11 +25,79 @@
   border-radius: 5px;
   border: none;
 }
-
-
 .counter.red{
-  color: rgb(255, 0, 0)
+  color: rgb(255, 0, 0);
+}
+
+.tweet{
+  margin-top: 20px;
+}
+
+.tweet header {
+  display: inline-block;
+}
+    
+
+.h-name {
+  display: inline-block;
+  margin: auto;
+}
+.h-aname {
+  display: inline-block;
+  float: right;
 }
 
 
+.h-image img {
+  vertical-align: middle;
+}
 
+.tweet p {
+  border-bottom: 5px black;
+  border-style: solid;
+  border-top:none;
+  border-left: none;
+  border-right: none;
+  padding: 5px;
+}
+
+.footer-left {
+  font-size: 20px;
+  font-family: source sans pro, sans-serif;
+  float: left;
+  margin-top: -52px;
+}
+
+.footer-right {
+  float: right;
+  vertical-align: bottom;
+  margin-top: 5px;
+}
+
+.foot {
+  margin-top: 10px;
+  display: block;
+}
+
+article.tweet {
+  border: 3px solid black;
+  font-weight:500;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+article.tweet:hover {
+  border: 3px solid black;
+  font-weight: 400;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  box-shadow: 10px 10px 12px;
+}
+article.tweet h1{
+  color: blue;
+}
+article.tweet header{
+  color: red;
+  font-family: source sans pro;
+  background-color: #f4f1ec;
+  height: 100px;
+}
