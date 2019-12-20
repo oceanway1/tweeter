@@ -1,4 +1,3 @@
-// var $ = require("jquery");
 $(document).ready(function() {
   // --- our code goes here ---
   // console.log("Testing to see if loadedS");

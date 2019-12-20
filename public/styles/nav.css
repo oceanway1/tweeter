@@ -11,7 +11,7 @@ nav {
   top: 0;
   height: 120px;
   width: 100%;
-  z-index: 2;
+  /* z-index: 2; */
   background-color: #4056A1;
   color: #ffffff;
   font-family: Bungee;
@@ -22,7 +22,7 @@ nav {
 .write-tweet {
   float: right;
   right: 0;
-  z-index: 1;
+  /* z-index: 1; */
   font-size: 20px;
   font-family: Source Sans Pro;
   height: 100px;

@@ -74,28 +74,41 @@ article.tweet:hover .h-aname {
 }
 
 .tweet p {
-  border-bottom: 5px black;
+  border-bottom: 2px black;
   border-style: solid;
   border-top:none;
-  border-left: 5px;
-  border-right: none;
-  padding-bottom: 10px;
+  border-left: 10px;
+  border-right: 1px;
+  padding-bottom: 2px;
+  font-size: 20px;
+  padding-left: 5px;
 }
 
 .footer-left {
   font-size: 20px;
   font-family: source sans pro, sans-serif;
   float: left;
-  margin-top: -52px;
-  
+  margin-top: -50px;
+  padding-bottom: 10px;
+  padding-left: 5px;  
 }
 
 .footer-right {
   float: right;
   vertical-align: bottom;
-  margin-top: 5px;
+  margin-top: -22px;
+  color: blue;
+  padding-right: 10px;
+
 }
 
+/* footer-right .fa fa-flag,fa fa-retweet,fa fa-heart {
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+
+
+} */
 .foot {
   margin-top: 10px;
   display: block;
