@@ -57,6 +57,7 @@ const createTweetElement = function (tweet) {
   return $tweet;
 };
 
+
 const renderTweets = function (tweets) {
   for (let x of tweets) {
     $tweet = createTweetElement(x)
@@ -67,3 +68,35 @@ renderTweets(data);
 
 
 
+$(document).ready(function () {
+
+  $(".compose-tweet").submit(function (event) {
+    event.preventDefault();
+    const newTweet = $(".tweet-text").val();
+
+    // $.ajax({
+    //   url: "/tweets",
+    //   method: "POST",
+    //   data: $('.compose-tweet').serialize(),
+    //   success: function () {
+    //     // $(index).html(data);
+    //     $('.tweet-container').empty(); 
+    //   }
+    // })
+    //   .done(function (data) {
+    //     console.log('done:', data);
+
+    //   })
+    // const formData = (this).serialize();
+
+    $.ajax({
+      url: "/tweets",
+      method: "POST",
+      data: newTweet
+    })
+      .then((function () {
+        console.log("Success")
+      }));
+
+  })
+})
