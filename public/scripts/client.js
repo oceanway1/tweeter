@@ -6,14 +6,12 @@
 
 $(document).ready(function () {
 
-
   //This function escapes XSS(cross-site scripting)
-const escape = function (str) {
-  let div = document.createElement('div');
-  div.appendChild(document.createTextNode(str));
-  return div.innerHTML;
-};
-
+  const escape = function (str) {
+    let div = document.createElement('div');
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  };
 
   const createTweetElement = function (tweet) {
     let date = new Date(tweet.created_at).toDateString();
@@ -52,7 +50,6 @@ const escape = function (str) {
 
 
   // renderTweets(data)
-
   const renderTweets = function (tweets) {
     $(".tweet-container").empty();
     for (let x of tweets) {
@@ -73,24 +70,16 @@ const escape = function (str) {
 
   loadTweets();
 
-  const $newTweet = $(".new-tweet");
-  let isNew = false;
-  $newTweet.hide();
-
-  $(".write-tweet").click(function () {
-    if (!isNew) {
-      $newTweet.slideToggle();
-      $("textarea").val('').focus();
-      $(".counter").text('140');
-      isNew = true;
-    }
-  })
-
-
   // create error element
   const $error = $(".error");
   const $errMessage = $('.err-message');
   $error.hide();
+  const $newTweet = $(".new-tweet");
+  $newTweet.hide();
+  $(".write-tweet").on("click", function () {
+    $newTweet.slideToggle();
+    $("textarea").val('').focus();
+  })
 
 
   $(".compose-tweet").submit(function (event) {
@@ -111,7 +100,7 @@ const escape = function (str) {
     $.ajax({
       url: "/tweets",
       method: "POST",
-      data: result, 
+      data: result,
       success: function () {
         $('.tweet-container').empty(); // clear the tweets
         loadTweets(); // reloading the tweets 
@@ -122,7 +111,6 @@ const escape = function (str) {
         $error.hide();
         $('.new-tweet').hide();
         $error.slideUp();
-        isNew = false;
       });
   })
 })
