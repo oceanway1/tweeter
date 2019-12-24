@@ -1,7 +1,7 @@
 $(document).ready(function() {
   // --- our code goes here ---
   // console.log("Testing to see if loadedS");
-  $(".tweet-text").keyup(function() {
+  $("textarea").keyup(function() {
     const maxCharacter = 140;
     const limit = $(this).val().length;
     let result = maxCharacter - limit;

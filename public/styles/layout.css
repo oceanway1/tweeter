@@ -19,6 +19,9 @@ body {
   background-color: #f4f1ec;
   font-size: 20px;
   font-family: Bungee, Source Sans Pro;
+  display: flex;
+  flex-direction: column;
+  word-wrap: break-word;
 
 }
 
@@ -27,9 +30,24 @@ body {
  */
 
  .container {
-  width: 90%;
-  margin: 5%;
-  background-color: #f4f1ec;
-  
+  display: block;
+  margin: auto;
+  padding: 0px 30px 30px 30px;
+  width: 85vw;
+}
+
+.desktop-layout{
+  display: flex;
+}
+
+.page-header {
+  margin-top: 3em;
+  margin-left: 3em;
 }
  
+main {
+  display: block;
+  margin: auto;
+  width: 90vw;
+  padding: 0px 40px 40px 40px;
+}

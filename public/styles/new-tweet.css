@@ -1,30 +1,41 @@
 .counter {
   float: right;
 }
+
 .new-tweet {
   font-family: source sans pro;
-  width: 100%;
+  display: block;
 }
-.tweet-text {
+
+textarea {
   border-bottom: 3px solid black;
   width: 100%;
   display: block;
-  overflow: hidden;
-  border-style: inset;
-  margin-bottom: 10px;
-  border-left: none;
-  border-top: none;
-  border-right: none;
+  margin: 60px auto 8px auto;
   background: #9ba7a81e;
+  resize: none;
+  outline: none;
+  border: none;
+  height: 70px;
+  font-weight: 700;
+  font-size: 1.2em;
 }
+
+input[type="submit"] {
+  background-color: #4056A1;
+  background-image: url("https://www.transparenttextures.com/patterns/crossword.png");
+  color: white;
+  font-family: 'Bungee', cursive;
+  border-radius: 7px;
+}
+
 .button {
-  display: inline-block;
   color: #fff;
   text-decoration: none;
   background: #2058f5ef;
   border-radius: 5px;
-  border: none;
 }
+
 .counter.red{
   color: rgb(255, 0, 0);
 }
@@ -42,35 +53,19 @@
   margin: auto;
   padding-top: 10px;
   font-size: 15px
-  /* float: left; */
 }
+
 article.tweet:hover .h-aname {
   color: red;
   opacity: 1;
 }
-.h-aname {
-  float: right;
-  padding-right: 25px;
-  font-size: 15px;
+
+article.tweet .h-aname {
   opacity: 0;
 }
-/* .h-aname:hover {
-  display: inline-block;
-  float: right;
-  padding-right: 25px;
-  font-size: 15px;
-  box-shadow: 10px 10px 5px;
 
-} */
-/* IMG IS NOT WORKING WHY? */
 .h-image  {
- vertical-align: middle; 
-  height: 60px;
-  width: 60px;
-  float: left;
-  padding-top: 10px;
-  padding-left: 10px;
-
+  display: inline;
 }
 
 .tweet p {
@@ -84,34 +79,13 @@ article.tweet:hover .h-aname {
   padding-left: 5px;
 }
 
-.footer-left {
-  font-size: 20px;
-  font-family: source sans pro, sans-serif;
-  float: left;
-  margin-top: -50px;
-  padding-bottom: 10px;
-  padding-left: 5px;  
-}
-
 .footer-right {
-  float: right;
-  vertical-align: bottom;
-  margin-top: -22px;
-  color: blue;
-  padding-right: 10px;
-
+  opacity: 0;
 }
 
-/* footer-right .fa fa-flag,fa fa-retweet,fa fa-heart {
-  margin-top: 50px;
-  margin-bottom: 50px;
-
-
-
-} */
-.foot {
-  margin-top: 10px;
-  display: block;
+i {
+  padding-left: 2px;
+  color:  blue;
 }
 
 article.tweet {
@@ -120,8 +94,8 @@ article.tweet {
   margin-top: 50px;
   margin-bottom: 50px;
   opacity: 0.5;
-  
 }
+
 article.tweet:hover {
   border: 3px solid black;
   font-weight: 400;
@@ -129,15 +103,34 @@ article.tweet:hover {
   margin-bottom: 50px;
   box-shadow: 10px 10px 8px;
   opacity: 1.0;
+}
 
-  /* opp */
-}
-article.tweet h1{
-  color: blue;
-}
 article.tweet header{
   color: red;
   font-family: source sans pro;
   background-color: #f4f1ec;
-  height: 100px;
+  width: 98%;
+  padding: 1rem 1rem 1rem 1.5rem;
+}
+
+article.tweet:hover header{
+  width: 98%;
+  display: flex;
+  padding: 1rem 1rem 1rem 1.5rem;
+  justify-content: space-between;
+}
+
+article.tweet main{
+  width: 99%;
+  padding: 1rem 1rem 1rem 1.5rem;
+  border-bottom: 3px solid black;
+}
+
+article.tweet footer {
+  font-size: 0.7em;
+  padding: 1rem 10rem 1rem 1.5rem;
+}
+
+article.tweet:hover .footer-right{
+  opacity: 1;
 }

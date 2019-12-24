@@ -20,7 +20,6 @@
   <!-- Link for Styling the Tweet route -->
   <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
 
-
   <!-- Add Style for Header -->
   <link rel="stylesheet" href="/styles/header.css" type="text/css" />
 
@@ -35,71 +34,58 @@
   <!-- Load Chacracter Function Count -->
   <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
 
+  <!-- Load Moment.js for time  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js"></script>
+
+  <!-- Disabling Viewport Zooming
+ -->
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+  
+  <!-- Add layout for Tablet Min Width : 768px -->
+  <link rel="stylesheet" href="/styles/@media.css" type="text/css" />
 
 </head>
 
+
 <body>
   <!-- Top nav bar (fixed) -->
-  <nav>
-    <span>tweeter</span>
-    <span class="write-tweet"><strong>Write</strong> a new tweet
-      <br><i class="fa fa-angle-double-down" aria-hidden="true"></i>
-    </span>
-
-
+  <nav class="container">
+    <span class="logo">tweeter</span>
+    <button class="new-tweet-button">
+      <div  class="new-tweet"><b>Write</b> a new tweet</div>
+      <div><i class="fa fa-angle-double-down" aria-hidden="true"></i></div>
+    </button>
   </nav>
-  <header>
-    <div class="avatar">
-      <img src="/images/profile-hex.png">
-    </div>
-    <br>
-    <div>
-      <h2 class="div">Luke Nguyen</h2>
-    </div>
-  </header>
+  <!-- <header> -->
+  <section class="desktop-layout">
+    <header class="page-header" class="box">
+      <div class="avatar">
+        <img src="/images/profile-hex.png">
+      </div>
+      <br>
+      <div>
+        <h2>Luke Nguyen</h2>
+      </div>
+    </header>
 
-  <!-- Page-specific (main) content here -->
-  <main class="container">
+    <!-- Page-specific (main) content here -->
+    <main class="box">
       <section class="error">
-          <p class="err-message">Test</p>
-        </section>
-    <section class="new-tweet">
-      <h2>Compose Tweet</h2>
-      <form class="compose-tweet" method="POST" action="/tweets">
-        <textarea class="tweet-text" name="text" placeholder="What are you humming about?"></textarea>
-        <input class="button" type="submit" value="Tweet">
-        <span class="counter">140</span>
-      </form>
-    </section>
-    <section class="tweet-container">
-      <!-- <article class="tweet">
-        <header>
-          <div>
-            <span>
-              <img class="h-image" src="/images/profile-hex.png">
-            </span>
-            <span class="h-name">
-              <h3>LUKE</h3>
-            </span>
-            <span class="h-aname">
-              <h3>@LUKE</h3>
-            </span>
+        <p class="err-message">Test</p>
+      </section>
+      <section class="new-tweet">
+        <form method="POST" action="/tweets">
+          <textarea name="text" placeholder="What are you humming about?"></textarea>
+          <div class="container">
+            <input type="submit" value="Tweet">
+            <span class="counter">140</span>
           </div>
-        </header>
-        <p>one dumb tweet </p>
-        <footer class="foot">
-          <span class="footer-left">
-            <h4>10 secs ago</h4>
-          </span>
-          <span class="footer-right">
-            <i class='fa fa-flag'></i>
-            <i class='fa fa-retweet'></i>
-            <i class='fa fa-heart'></i>
-          </span>
-        </footer>
-      </article> -->
-    </section>
-  </main>
+        </form>
+      </section>
+      <section class="tweet-container">
+      </section>
+    </main>
+  </section>
 </body>
 
 </html>

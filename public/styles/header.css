@@ -1,23 +1,17 @@
-header {
+.page-header {
   height: 400px;
-  width: 100%;
-  position: relative;
-  background-color: #9dd13cef ;
+  max-width: 550px;
+  background-color: palegoldenrod ;
   font-family: source sans pro;
 }
 
 .avatar img {
-display: block;
-margin: 0 auto;
-margin-top: 120px;
-  
+  display: block;
+  margin: auto;  
 }
 
-.div {
-  position: relative;
-  /* z-index: 2; */
+h2 {
+  display: block;
   margin-top: auto;
   text-align: center;
-  background-color: #aa3709;
-  background-image: url("https://www.transparenttextures.com/patterns/60-lines.png");
 }
